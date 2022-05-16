@@ -1,3 +1,5 @@
+package Tasks_Day_1;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class T2 {
