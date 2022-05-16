@@ -1,15 +1,54 @@
 package Tasks_Day_1;
+import java.util.Scanner;
 
 public class T1 {
-    public static void main (String[] args){
-        int[][] Array = new int[10][10];
+    public static void main(String[] args) {
+        int num1, num2;
+        var scanner = new Scanner(System.in);
 
-        for (int row =0; row< Array.length; row++){
-            for (int col=0; col< Array.length; col++){
-                Array[row][col]=(row+1)*(col+1);
-                System.out.println((row+1) + " * " + (col+1) + " = " + Array[row][col]);
-            }
-            System.out.println();
+        System.out.print("Enter first number: ");
+        num1 = scanner.nextInt();
+        System.out.print("Enter second number: ");
+        num2 = scanner.nextInt();
+
+        System.out.printf("Is %d equal to %d", num1, num2);
+        if(num1 == num2){
+            System.out.println(" -true");
+        }
+        else {
+            System.out.println(" -false");
+        }
+
+        System.out.printf("Is %d less than %d", num1, num2);
+        if(num1 < num2){
+            System.out.println(" -true");
+        }
+        else {
+            System.out.println(" -false");
+        }
+
+        System.out.printf("Is %d less or equal to %d", num1, num2);
+        if(num1 <= num2){
+            System.out.println(" -true");
+        }
+        else {
+            System.out.println(" -false");
+        }
+
+        System.out.printf("Is %d greater than %d", num1, num2);
+        if(num1 > num2){
+            System.out.println(" -true");
+        }
+        else {
+            System.out.println(" -false");
+        }
+
+        System.out.printf("Is %d greater or equal to %d", num1, num2);
+        if(num1 >= num2){
+            System.out.println(" -true");
+        }
+        else {
+            System.out.println(" -false");
         }
     }
 }

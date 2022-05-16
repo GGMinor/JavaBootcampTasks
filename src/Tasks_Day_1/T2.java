@@ -1,24 +1,24 @@
 package Tasks_Day_1;
 
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Scanner;
 
 public class T2 {
-    public static void main (String[] args){
+    public static void main(String[] args) {
+        boolean b1, b2;
+        var scanner = new Scanner(System.in);
 
-        int[] Array = new int[4];
-        int[] ArrayCopy = new int[4];
+        System.out.print("Enter b1:");
+        b1 = scanner.nextBoolean();
 
-        //Example Array
-        for(int i=0; i<Array.length; i++){
-            Array[i]= ThreadLocalRandom.current().nextInt(1, 10);
-            System.out.println(Array[i]);
+        System.out.print("Enter b2:");
+        b2 = scanner.nextBoolean();
+
+        System.out.printf("Is b1 and b2 equal?");
+        if(b1 == b2){
+            System.out.println(" -true");
         }
-        System.out.println();
-
-        //Array Copy
-        for(int i=0; i<Array.length; i++){
-            ArrayCopy[i]= Array[i];
-            System.out.println(ArrayCopy[i]);
+        else{
+            System.out.println(" -false");
         }
     }
 }
